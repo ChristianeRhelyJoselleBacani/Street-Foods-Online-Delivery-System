@@ -13,7 +13,7 @@ def buy():
     price = price_list.get(userOrder, 0)
     if price == 0:
         print("INVALID ORDER!")
-        return  # Skip the rest of the buy() function
+        return  
 
     quantity = int(input("Enter quantity here: "))
     orders.append({"item": userOrder, "quantity": quantity, "price": price})
@@ -54,7 +54,7 @@ while True:
         print("\nThank you for choosing Street Foods Online Delivery System! Enjoy your delightful street food experience.")
 
     elif userChoose == 3:
-        break  # Exit the loop when the user chooses to exit
+        break 
 
 
 
